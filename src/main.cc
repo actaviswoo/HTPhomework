@@ -18,6 +18,9 @@ int main() {
         Solution::InvertAllBitsXOR<int8_t, size>(array1);
         Solution::PrintBits<int8_t, size>(array1);
     }
+    std::cout << "\n-----------invert one bit-----------" << std::endl;
+    Solution::InvertBit<int8_t>(array1[0], 0);
+    Solution::PrintBits<int8_t, size>(array1);
     std::cout << "\n-----------change in range-----------" << std::endl;
     Solution::InvertBitsInitializerList<int8_t, size>(array1, {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 11, 12, 13, 14, 15});
     Solution::PrintBits<int8_t, size>(array1);
